@@ -7,7 +7,15 @@ namespace backend_assignment1.Controllers
     [ApiController]
     public class q1Controller : ControllerBase
     {
-        // GET localhost:xx/api/q1/welcome -> "Welcome to 5125!"
+        /// <summary>
+        /// This code gets an HTTP get request and gives a message as an output
+        /// </summary>
+        /// <returns>
+        /// Provides a message as "Welcome to 5125"
+        /// </returns>
+        /// <example>
+        ///GET api/q1/welcome ->  Welcome to 5125
+        /// </example>
         [HttpGet(template: "welcome")]
         public string welcome()
         {

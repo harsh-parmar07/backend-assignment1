@@ -7,7 +7,18 @@ namespace backend_assignment1.Controllers
     [ApiController]
     public class q3Controller : ControllerBase
     {
-        //GET localhost:xx/api/q3/cube -> "Cube"
+        /// <summary>
+        /// This provides the cube of any number given by the user
+        /// </summary>
+        /// <param name="num">here "num" is the number input by the user</param>
+        /// <returns>
+        /// An http response of the cube of the number entered by the user
+        /// </returns>
+        /// <example>
+        ///GET localhost:xx/api/q3/cube -> "Cube"
+        ///GET localhost:xx/api/q3/4 -> 64
+        ///GET localhost:xx/api/q3/-4 -> -64
+        /// </example>
         [HttpGet(template: "cube/{num}")]
         public int q3(int num)
         {

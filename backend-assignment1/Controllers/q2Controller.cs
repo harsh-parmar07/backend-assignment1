@@ -7,8 +7,19 @@ namespace backend_assignment1.Controllers
     [ApiController]
     public class q2Controller : ControllerBase
     {
-        // GET localhost:xx/api/q2/greeting?name=Gary -> "Hi Gary!"
-        // GET localhost:xx/api/q2/greeting?name=Harsh -> "Hi Harsh!"
+        /// <summary>
+        /// It gets a name from user and print Hi! and name after Hi
+        /// </summary>
+        /// <param name="name">
+        /// name is the string for input from user
+        /// </param>
+        /// <returns>
+        /// "Hi! {name}"
+        /// </returns>
+        /// <example>
+        /// GET localhost:xx/api/q2/greeting?name=Gary -> "Hi Gary!"
+        /// GET localhost:xx/api/q2/greeting?name=Harsh -> "Hi Harsh!"
+        /// </example>
         [HttpGet(template: "greeting")]
         public string greeting(string name)
         {
